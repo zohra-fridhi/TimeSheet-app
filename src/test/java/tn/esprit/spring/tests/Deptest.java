@@ -70,7 +70,7 @@ public class Deptest {
 			service.deleteDepartementById(id_departement);
 			l.info("Je vais supprimer l'entreprise.");
 			service.deleteEntrepriseById(id_entreprise);
-			l.info("Out testAffecterDepartement() sans erreurs.");
+			l.info("Out  testAffecterDepartement() sans erreurs.");
 		}catch (Exception e) { l.error("Erreur dans testAffecterDepartement() : " + e); }
 	}
 	
