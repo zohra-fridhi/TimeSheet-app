@@ -68,7 +68,7 @@ public class Deptest {
 			//assertTrue(D1.getEntreprise().getId()==id_entreprise);
 			l.info("Je vais supprimer le departement.");
 			service.deleteDepartementById(id_departement);
-			l.info("Je  vais supprimer l'entreprise.");
+			l.info("Je vais supprimer l'entreprise.");
 			service.deleteEntrepriseById(id_entreprise);
 			l.info("Out testAffecterDepartement() sans erreurs.");
 		}catch (Exception e) { l.error("Erreur dans testAffecterDepartement() : " + e); }
