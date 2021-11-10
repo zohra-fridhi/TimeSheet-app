@@ -29,7 +29,7 @@ public class Timesheet implements Serializable{
 	
 	private boolean isValide;
 	
-
+	//getters & setters
 	public boolean isValide() {
 		return isValide;
 	}
