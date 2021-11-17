@@ -15,12 +15,12 @@ public class Timesheet implements Serializable{
 	@EmbeddedId
 	private TimesheetPK timesheetPK;
 	
-	//idMission est a la fois primary key et foreign key
+	
 	@ManyToOne
     @JoinColumn(name = "idMission", referencedColumnName = "id", insertable=false, updatable=false)
 	private Mission mission;
 	
-	//idEmploye est a la fois primary key et foreign key
+	
 	
 	@ManyToOne
     @JoinColumn(name = "idEmploye", referencedColumnName = "id", insertable=false, updatable=false)
@@ -29,7 +29,7 @@ public class Timesheet implements Serializable{
 	
 	private boolean isValide;
 	
-	//getters & setters
+	
 	public boolean isValide() {
 		return isValide;
 	}
