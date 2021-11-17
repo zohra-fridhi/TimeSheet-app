@@ -46,7 +46,7 @@ public class TimesheetServiceImplTest {
         Assert.assertNotNull(timesheet);
         Assert.assertEquals(timesheet.getTimesheetPK().getIdEmploye(), 1);
         Assert.assertEquals(timesheet.getTimesheetPK().getIdMission(), 1);
-        tr.delete(timesheet);
+        //tr.delete(timesheet);
 
 
     }
