@@ -46,12 +46,12 @@ public class TimesheetServiceImplTest {
         Assert.assertNotNull(timesheet);
         Assert.assertEquals(timesheet.getTimesheetPK().getIdEmploye(), 1);
         Assert.assertEquals(timesheet.getTimesheetPK().getIdMission(), 1);
-        //tr.delete(timesheet);
+        tr.delete(timesheet);
 
 
     }
     @Test
-    public void shouldGetExceptionWhenEmployeeDoesNotExist() {
+    public void shouldGetExceptionWhenMissionDoesNotExist() {
         Date dateDebut = new Date(2021, Calendar.OCTOBER, 30);
         Date dateFin = new Date(2022, Calendar.DECEMBER, 30);
         exception.expect(DataIntegrityViolationException.class);
