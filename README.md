@@ -1,6 +1,6 @@
 # TimeSheet app
 
-## Outil:
+## Outil: :smile:
 * spring framework 5
 * Maven 3.3.3
 * Junit 4
